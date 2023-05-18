@@ -19,16 +19,8 @@ public class ExamenIntegrador {
         Estudiante e7 = es.crearEst();
         Estudiante e8 = es.crearEst();
         
-        Estudiante ar [] = new Estudiante [8];
+        Estudiante ar [] = {e1, e2, e3, e4 ,e5, e6, e7, e8};
         
-        ar[0] = e1;
-        ar[1] = e2;
-        ar[2] = e3;
-        ar[3] = e4;
-        ar[4] = e5;
-        ar[5] = e6;
-        ar[6] = e7;
-        ar[7] = e8;
         double notas = 0;
         int cont = 0;
         //con el prox for saco la suma de todas las notas para desp sacar el promedio
