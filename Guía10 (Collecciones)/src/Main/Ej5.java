@@ -10,8 +10,9 @@ public class Ej5 {
     
     public static void main(String[] args) {
         PaisServicio ps = new PaisServicio();
-        TreeSet<Pais> p = ps.crearPaises();
-        ps.eliminarPais(p);
+        TreeSet<Pais> lista = ps.crearPaises();
+        ps.mostrarPaises(lista);
+        ps.eliminarPais(lista);
     }
 
 }
