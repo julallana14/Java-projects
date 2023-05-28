@@ -9,16 +9,17 @@ public class TiendaServicio {
     Scanner leer = new Scanner(System.in).useDelimiter("\n"); 
     
     public void agregarProductos(HashMap<String, Double> productos){
-//        String ans;
-//        do {
+        String ans;
+        do {
         System.out.println("Ingrese el nombre del producto");
         String nom = leer.next();
         System.out.println("Ingrese el precio");
         Double precio = leer.nextDouble();
         productos.put(nom,precio);
-//            System.out.println("¿Desea agregar otro producto? (s/n)");
-//            ans = leer.next();
-//        } while (!"n".equalsIgnoreCase(ans));
+            System.out.println("¿Desea agregar otro producto? (s/n)");
+            ans = leer.next();
+            System.out.println(" ");
+        } while (!"n".equalsIgnoreCase(ans));
     }
     
     public void modificarPrecio(Map<String, Double> productos){
@@ -28,6 +29,7 @@ public class TiendaServicio {
             System.out.println("Ingrese el nuevo precio");
             double nuevoPrecio = leer.nextDouble();
             productos.put(llave, nuevoPrecio);
+            System.out.println(" ");
         }
             else  System.out.println("El producto no se encuentra en la lista");
     }
@@ -37,15 +39,19 @@ public class TiendaServicio {
         String llave = leer.next();
         if (productos.containsKey(llave)) {
             productos.remove(llave);
+            System.out.println(" ");
         } else  System.out.println("El producto no se encuentra en la lista");
     }
     
     public void mostrarProductos(Map<String, Double> productos){
-        for (Map.Entry<String, Double> aux : productos.entrySet()) {
-            String key = aux.getKey();
-            Double value = aux.getValue();
-            System.out.println("Producto: " + key);
-            System.out.println("Precio" + value);
+//        for (Map.Entry<String, Double> aux : productos.entrySet()) {
+//            String key = aux.getKey();
+//            Double value = aux.getValue();
+//            System.out.println("--------------------");
+//            System.out.println("Producto: " + key);
+//            System.out.println("Precio $ " + value);
+            
+            productos.forEach((k,v) -> System.out.println("Producto: " + k + " precio: $ " + v));
         } 
     }
-}
+
