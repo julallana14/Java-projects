@@ -6,8 +6,8 @@ private int posicionActual;
 private int posicionBala;
 
     public void cargarRevolver() {
-        this.posicionActual = (int) Math.random()*8+1;
-        this.posicionBala = (int) Math.random()*8+1;
+        this.posicionActual = (int) (Math.random()*8+1);
+        this.posicionBala = (int) (Math.random()*8+1);
     }
 
     public boolean matar(){

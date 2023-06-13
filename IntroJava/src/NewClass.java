@@ -1,3 +1,6 @@
+
+import java.util.Scanner;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -13,7 +16,7 @@ public class NewClass {
         String nombre;
         Scanner leer = new Scanner(System.in).useDelimiter("\n");
         System.out.println("Ingrese su nombre");
-        nombre = leer.nextIn();
+        nombre = leer.next();
         System.out.println("Su nombre es: " + nombre);
         
     }

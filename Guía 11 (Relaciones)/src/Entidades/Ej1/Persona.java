@@ -11,11 +11,12 @@ private Perro perro;
     public Persona() {
     }
 
-    public Persona(String nombre, String apellido, int edad, int dni) {
+    public Persona(String nombre, String apellido, int edad, int dni, Perro perro) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
         this.dni = dni;
+        this.perro = perro;
     }
 
     public String getNombre() {

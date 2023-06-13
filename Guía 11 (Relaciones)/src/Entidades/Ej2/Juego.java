@@ -22,7 +22,7 @@ public class Juego {
             if (player.isMuerto()) {
                 juegoCurso = true;
                 System.out.println(player.getNombre() + " está muerto");
-            } else System.out.println("El jugador " + indice + "ha sobrevivido");
+            } else System.out.println("El jugador " + (indice+1) + " ha sobrevivido");
 //            if (indice < listaJugadores.size()) {
 //                indice++;
 //            } else {

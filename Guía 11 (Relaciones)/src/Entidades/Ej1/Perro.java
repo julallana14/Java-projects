@@ -6,15 +6,26 @@ private String nombre;
 private String raza;
 private int edad;
 private String tamaño;
+private boolean adoptado;
 
     public Perro() {
+        this.adoptado = false;
     }
 
     public Perro(String nombre, String raza, int edad, String tamaño) {
+        this.adoptado = false;
         this.nombre = nombre;
         this.raza = raza;
         this.edad = edad;
         this.tamaño = tamaño;
+    }
+
+    public boolean isAdoptado() {
+        return adoptado;
+    }
+
+    public void setAdoptado(boolean adoptado) {
+        this.adoptado = adoptado;
     }
 
     public String getNombre() {
