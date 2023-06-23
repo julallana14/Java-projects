@@ -1,5 +1,5 @@
 
-package Clases;
+package Entidades;
 
 import java.util.Scanner;
 

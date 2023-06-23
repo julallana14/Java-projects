@@ -1,5 +1,5 @@
 
-package Clases;
+package Entidades;
 
 public class Ej2_array {
 private int [] vector; 

@@ -1,6 +1,6 @@
 package Main;
 
-import Clases.Ej2_array;
+import Entidades.Ej2_array;
 
 public class Ej_array {
 

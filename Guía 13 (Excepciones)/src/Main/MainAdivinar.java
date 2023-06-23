@@ -1,7 +1,7 @@
 
 package Main;
 
-import Clases.AdivinarNumero;
+import Entidades.AdivinarNumero;
 import Servicios.AdivinarNumeroServicio;
 
 public class MainAdivinar {

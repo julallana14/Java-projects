@@ -1,7 +1,7 @@
 
 package Servicios;
 
-import Clases.AdivinarNumero;
+import Entidades.AdivinarNumero;
 import java.util.Scanner;
 
 

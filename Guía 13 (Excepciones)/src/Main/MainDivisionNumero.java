@@ -1,6 +1,6 @@
 package Main;
 
-import Clases.DivisionNumero;
+import Entidades.DivisionNumero;
 import java.util.Scanner;
 
 public class MainDivisionNumero {

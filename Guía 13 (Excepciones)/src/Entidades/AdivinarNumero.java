@@ -1,5 +1,5 @@
 
-package Clases;
+package Entidades;
 
 public class AdivinarNumero {
     private int num;
