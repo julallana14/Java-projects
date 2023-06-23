@@ -43,24 +43,17 @@ public class MainEdificios {
         
         System.out.println("------SUPERFICIE Y VOLUMEN ------");
         for (Edificio aux : edificios) {
-            if (aux.equals(poli1)) {
-            System.out.println("Superficie del polideportivo 1: "+aux.calcularSuperficie());
-            System.out.println("Volumen del polideportivo 1: " +aux.calcularVolumen());
+            if (aux instanceof Polideportivo) {
+            System.out.println("Superficie del polideportivo: "+aux.calcularSuperficie());
+            System.out.println("Volumen del polideportivo: " +aux.calcularVolumen());
                 System.out.println("-------------------------");
-            } else if (aux.equals(poli2)){
-                System.out.println("Superficie del polideportivo 2: "+aux.calcularSuperficie());
-                System.out.println("Volumen del polideportivo 2: " +aux.calcularVolumen());
+            } else if (aux instanceof EdificioDeOficinas){
+                System.out.println("Superficie del edificio de oficinas: "+aux.calcularSuperficie());
+                System.out.println("Volumen del edificio de oficinas: " +aux.calcularVolumen());
                 System.out.println("-------------------------");
-            } else if (aux.equals(edificioOficinas1)){
-                System.out.println("Superficie del edificio de oficinas 1: "+aux.calcularSuperficie());
-                System.out.println("Volumen del edificio de oficinas 1: " +aux.calcularVolumen());
-                System.out.println("-------------------------");
-            } else if (aux.equals(edificioOficinas2)){
-                System.out.println("Superficie del edificio de oficinas 2: "+aux.calcularSuperficie());
-                System.out.println("Volumen del edificio de oficinas 2: " +aux.calcularVolumen());
-                System.out.println("-------------------------");
-            }
         }
+        }       
+            
         System.out.println(" ");
         System.out.println("------POLIDEPORTIVOS------");
         System.out.println("Hay " + techados + " polideportivo(s) techados y " + abiertos + " polideportivo(s) abiertos");
@@ -70,5 +63,4 @@ public class MainEdificios {
         System.out.println("------EDIFICIO DE OFICINAS 2 ------");
         edificioOficinas2.cantPersonas();
     }
-
 }

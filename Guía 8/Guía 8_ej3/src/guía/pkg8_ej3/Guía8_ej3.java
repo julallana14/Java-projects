@@ -11,7 +11,15 @@ import Servicios.PersonaServicio;
 public class Guía8_ej3 {
 
     public static void main(String[] args) {
+        
         PersonaServicio ps = new PersonaServicio();
+//        Persona p = null;
+//       try {
+//           ps.esMayorDeEdad(p);
+//       } catch (Exception e) {
+//           System.out.println("La persona no contiene los datos para saber si es mayor de edad");
+//       }
+        
         boolean [] mayorEdad = new boolean[4];
         int [] imc = new int[4];
         //En las lineas 18,21,24 y 27 creo los objectos persona

@@ -41,14 +41,12 @@ private String instalacion;
 
     @Override
     public double calcularSuperficie() {
-        double superficie;
-        return superficie = largo * ancho;
+        return largo * ancho;
     }
 
     @Override
     public double calcularVolumen() {
-        double volumen;
-        return volumen = alto * largo * ancho;
+        return alto * largo * ancho;
     }
 
 

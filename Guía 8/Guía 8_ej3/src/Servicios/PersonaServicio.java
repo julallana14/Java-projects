@@ -27,7 +27,9 @@ public class PersonaServicio {
         double altura = leer.nextDouble();
         return new Persona (nombre, edad, sexo, peso, altura);
     }
+    
     public boolean esMayorDeEdad(Persona p) {
+        
         if (p.getEdad() > 17) {
             System.out.println("La persona es mayor de edad");
             return p.getEdad() > 17;
